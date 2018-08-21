@@ -7,14 +7,14 @@ permalink:           pretty
 # Setup
 title:               sejinleecodes
 tagline:             'and also blogs'
-description:         'A reserved <a href="http://jekyllrb.com" target="_blank">Jekyll</a> theme that places the utmost gravity on content with a hidden drawer. Made by <a href="https://twitter.com/mdo" target="_blank">@mdo</a>.'
+description:         'A blog where I share my honest thoughts, random ideas and unforgettable experiences'
 url:                 http://lanyon.getpoole.com
 baseurl:             '/sejinleecodes'
 paginate:            5
 
 # About/contact
 author:
-  name:              Mark Otto
+  name:              Se Jin Lee
   url:               https://twitter.com/mdo
   email:             markdotto@gmail.com
 
