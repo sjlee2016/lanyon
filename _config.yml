@@ -2,9 +2,9 @@
 #
 # Use of `relative_permalinks` ensures post links from the index work properly.
 
-permalinks :         pretty
+permalink:           pretty
 # Setup
-title:               Sejinlee
+title:               Lanyon
 tagline:             'blog'
 description:         'A place where I'm going to post about my honest thoughts, random ideas, unforgettable memories and experiences'
 url:                 http://lanyon.getpoole.com
