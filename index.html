@@ -1,38 +1,52 @@
----
-layout: default
-title: Home
----
-
-<div class="posts">
-  {% for post in paginator.posts %}
-  <div class="post">
-    <h1 class="post-title">
-      <a href="{{ site.baseurl }}{{ post.url }}">
-        {{ post.title }}
-      </a>
-    </h1>
-
-    <span class="post-date">{{ post.date | date_to_string }}</span>
-
-    {{ post.content }}
-  </div>
-  {% endfor %}
-</div>
-
-<div class="pagination">
-  {% if paginator.next_page %}
-    <a class="pagination-item older" href="{{ site.baseurl }}/page{{paginator.next_page}}">Older</a>
-  {% else %}
-    <span class="pagination-item older">Older</span>
-  {% endif %}
-  {% if paginator.previous_page %}
-    {% if paginator.page == 2 %}
-      <a class="pagination-item newer" href="{{ site.baseurl }}/">Newer</a>
-    {% else %}
-      <a class="pagination-item newer" href="{{ site.baseurl }}/page{{paginator.previous_page}}">Newer</a>
-    {% endif %}
-  {% else %}
-    <span class="pagination-item newer">Newer</span>
-  {% endif %}
-</div>
-
+<!DOCTYPE html>
+<html>
+<head>
+        <link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+        <link rel="stylesheet" type="text/css" href="app.css">
+        <link href="https://fonts.googleapis.com/css?family=Lato:400,700" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=Chakra+Petch" rel="stylesheet">
+   
+</head>
+<body>
+        <nav class="navbar navbar-inverse navbar-fixed-top"> 
+                <div class="container">
+                    <div class="navbar-header">
+                                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-nav-demo" aria-expanded="false">
+                                  <span class="sr-only">Toggle navigation</span>
+                                  <span class="icon-bar"></span>
+                                  <span class="icon-bar"></span>
+                                  <span class="icon-bar"></span>
+                                </button>
+                                
+                    </div>
+                 <a class="navbar-brand" href ="#"> <span class="glyphicon glyphicon-picture" aria-hidden="true"></span> Se Jin</a>
+                <div class="collapse navbar-collapse" id="bs-nav-demo">
+                 <ul class="nav navbar-nav">
+                    <li> <a href="#"> about me </a></li>
+                    <li> <a href="#"> Contact </a></li>
+                    <li> <a href="#"> Journal </a></li>
+                </ul>
+                <ul class = "nav navbar-nav navbar-right">
+                        <li> <a href="#"> sign up </a></li>
+                        <li> <a href="#"> login </a></li>
+                </ul>
+                </div>
+            </div>
+        </nav>
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-12">
+                <div id="content">
+                <h1>Welcome to Se Jin's Blog</h1>
+                <h3>A Programmer who writes journals</h3>
+                <hr>
+                <button class="btn btn-default btn-lg"> <span class="glyphicon glyphicon-hand-right" aria-hidden="true"></span> Get Started ! </button>
+                 </div>
+            </div>
+        </div>
+    </div>
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" ></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+</body>
+</html>
